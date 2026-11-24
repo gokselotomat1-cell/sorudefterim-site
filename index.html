@@ -3,66 +3,280 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soru Defterim — Dijital hata defteri | TYT, AYT, LGS, KPSS</title>
+<meta name="description" content="Çözemediğin sorunun fotoğrafını çek, çözümünü ekle; Soru Defterim aralıklı tekrarla doğru günde yeniden önüne getirsin. TYT, AYT, LGS ve KPSS için dijital hata defteri.">
 <meta name="robots" content="index, follow">
-<title>Gizlilik, KVKK ve İletişim — Soru Defterim</title>
+<link rel="canonical" href="https://gokselotomat1-cell.github.io/sorudefterim-site/">
+<meta name="apple-itunes-app" content="app-id=6812670379">
+<meta name="theme-color" content="#0e1120">
+<link rel="icon" type="image/png" href="gorsel/ikon-192.png">
+<link rel="apple-touch-icon" href="gorsel/ikon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Soru Defterim">
+<meta property="og:title" content="Soru Defterim — Dijital hata defteri">
+<meta property="og:description" content="Çözemediğin sorunun fotoğrafını çek, çözümünü ekle; Soru Defterim aralıklı tekrarla doğru günde yeniden önüne getirsin. TYT, AYT, LGS ve KPSS için dijital hata defteri.">
+<meta property="og:url" content="https://gokselotomat1-cell.github.io/sorudefterim-site/">
+<meta property="og:image" content="https://gokselotomat1-cell.github.io/sorudefterim-site/gorsel/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
-:root{--arka:#fff;--kagit:#fbfbf8;--metin:#161a2e;--soluk:#5b6072;--cizgi:#e4e5df;--mavi:#2b4eff;--vurgu:#fff4c2;--vurgucizgi:#e0c24a}
-@media (prefers-color-scheme:dark){:root{--arka:#0e1120;--kagit:#161a2e;--metin:#e9eaf0;--soluk:#a2a6b8;--cizgi:#2a2f45;--mavi:#8496ff;--vurgu:#4a3f10;--vurgucizgi:#8a7420}}
+@font-face{font-family:"Bricolage Grotesque";src:url(fonts/BricolageGrotesque-Bold.ttf) format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:"Plus Jakarta Sans";src:url(fonts/PlusJakartaSans-Medium.ttf) format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Plus Jakarta Sans";src:url(fonts/PlusJakartaSans-Bold.ttf) format("truetype");font-weight:700;font-display:swap}
+:root{--zemin:#fbfbf8;--kart:#fff;--bant:#f0f1ec;--metin:#161a2e;--soluk:#5b6072;--cizgi:#dcddd5;--mavi:#2b4eff;--mavizemin:#eef1ff;--sari:#f5b301}
+@media (prefers-color-scheme:dark){:root{--zemin:#0e1120;--kart:#1c2136;--bant:#161a2e;--metin:#f1f2f6;--soluk:#a2a6b8;--cizgi:#2e3450;--mavi:#8496ff;--mavizemin:#1a2145}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--arka);color:var(--metin);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;font-size:17px}
-.kap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
-.ust{background:var(--kagit);border-bottom:1px solid var(--cizgi);padding:28px 0}
-.marka{font-weight:700;color:var(--mavi);letter-spacing:.2px}
-.ust h1{margin:.25em 0 0;font-size:1.7rem;line-height:1.25}
-main{padding:32px 20px 8px}
-h2{margin:1.8em 0 .5em;font-size:1.25rem;padding-bottom:.3em;border-bottom:1px solid var(--cizgi)}
-h3{margin:1.5em 0 .3em;font-size:1.05rem;color:var(--soluk)}
-p{margin:1em 0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--zemin);color:var(--metin);font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-weight:500;font-size:17px;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--mavi)}
-hr{border:none;border-top:1px solid var(--cizgi);margin:2em 0}
-table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.95rem;display:block;overflow-x:auto}
-th,td{border:1px solid var(--cizgi);padding:8px 12px;text-align:left;vertical-align:top}
-th{background:var(--kagit);font-weight:600}
-blockquote{margin:1.2em 0;padding:.6em 1em;border-left:3px solid var(--mavi);background:var(--kagit);border-radius:6px}
-blockquote p{margin:0}
-ul,ol{padding-left:1.4em}
-li{margin:.4em 0}
-mark.ph{background:var(--vurgu);color:inherit;padding:0 4px;border-radius:4px;outline:1px dashed var(--vurgucizgi);font-style:normal}
-footer{border-top:1px solid var(--cizgi);margin-top:2.5em;padding:24px 0 48px}
-footer p{margin:.5em 0}
-.kucuk{color:var(--soluk);font-size:.85rem}
+h1,h2,h3{font-family:"Bricolage Grotesque","Plus Jakarta Sans",sans-serif;font-weight:700;line-height:1.12;margin:0}
+h2{font-size:clamp(1.7rem,4.2vw,2.5rem)}
+h3{font-size:1.2rem;line-height:1.3}
+p{margin:0}
+.kap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+.bolum{padding:72px 0}
+.ustyazi{font-weight:700;font-size:.8rem;letter-spacing:.14em;color:var(--mavi);margin-bottom:14px}
+.aciklama{color:var(--soluk);font-size:1.08rem;margin-top:14px;max-width:38em}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(60% 55% at 92% 4%,rgba(43,78,255,.55),transparent 70%),radial-gradient(45% 45% at 0% 72%,rgba(91,119,255,.22),transparent 70%),linear-gradient(160deg,#1d2447,#0e1120)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:linear-gradient(#000,transparent 72%);mask-image:linear-gradient(#000,transparent 72%);pointer-events:none}
+.hero .kap{position:relative}
+.ust{display:flex;align-items:center;gap:20px;padding:22px 0}
+.marka{display:flex;align-items:center;gap:12px;font-weight:700;font-size:1.1rem;color:#fff;text-decoration:none;margin-right:auto}
+.marka img{width:40px;height:40px;border-radius:9px}
+.ust nav{display:none;gap:26px}
+.ust nav a{color:#d5d9ea;text-decoration:none;font-size:.95rem}
+.ust nav a:hover{color:#fff}
+.dugme{display:inline-block;background:var(--sari);color:#161a2e;font-weight:700;text-decoration:none;padding:10px 20px;border-radius:999px}
+.kahraman{display:grid;gap:36px;align-items:center;padding:34px 0 0}
+.kahraman h1{font-size:clamp(2.4rem,7.4vw,4.3rem);letter-spacing:-.01em}
+.kahraman h1 span{color:var(--sari)}
+.kahraman .ustyazi{color:#e6e8f2;display:inline-block;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.08);padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.kahraman .aciklama{color:#c3c8dc;font-size:1.15rem}
+.sinavlar{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.sinavlar li{font-weight:700;font-size:.85rem;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 13px;color:#e6e8f2}
+.magazalar{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:28px}
+.magazalar img{height:54px;width:auto}
+.yakinda{font-weight:700;font-size:.95rem;border:1px dashed rgba(255,255,255,.4);border-radius:12px;padding:13px 18px;color:#e6e8f2}
+.bant .yakinda,.kapanis .yakinda{color:#e6e8f2}
+.not{margin-top:16px;font-size:.92rem;color:#aab0c8}
+.kahraman .cihaz{justify-self:center;width:min(310px,78vw);margin-bottom:-140px}
+.adimlar{display:grid;gap:18px;margin-top:38px;padding:0;list-style:none;counter-reset:adim}
+.adimlar li{background:var(--kart);border:1px solid var(--cizgi);border-radius:20px;padding:26px;counter-increment:adim}
+.adimlar li::before{content:counter(adim);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--mavi);color:#fff;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.3rem;margin-bottom:16px}
+@media (prefers-color-scheme:dark){.adimlar li::before{color:#0e1120}}
+.adimlar p,.kartlar p{color:var(--soluk);margin-top:8px}
+.ikili{display:grid;gap:34px;align-items:center}
+.ikili .cihaz{justify-self:center;width:min(280px,72vw)}
+.ikili ul{margin:20px 0 0;padding:0;list-style:none}
+.ikili li{position:relative;padding-left:30px;margin:11px 0}
+.ikili li::before{content:"";position:absolute;left:0;top:.45em;width:16px;height:9px;border-left:3px solid var(--mavi);border-bottom:3px solid var(--mavi);transform:rotate(-45deg)}
+.kartlar{display:grid;gap:18px;margin-top:38px}
+.kartlar>div{background:var(--kart);border:1px solid var(--cizgi);border-radius:20px;padding:26px}
+.bant{background:var(--bant)}
+.mavibant{background:var(--mavizemin)}
+.baglantilar{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:26px;align-items:center}
+.cizgili{font-weight:700}
+.planlar{display:grid;gap:18px;margin-top:38px}
+.plan{background:var(--kart);border:1px solid var(--cizgi);border-radius:20px;padding:28px}
+.plan.one{border:2px solid var(--mavi)}
+.plan ul{margin:16px 0 0;padding-left:1.2em;color:var(--soluk)}
+.plan li{margin:7px 0}
+.sss{margin-top:30px;border-top:1px solid var(--cizgi)}
+details{border-bottom:1px solid var(--cizgi);padding:18px 0}
+summary{font-weight:700;cursor:pointer;font-size:1.05rem}
+details p{color:var(--soluk);margin-top:10px;max-width:46em}
+.kapanis{color:#fff;text-align:center;background:linear-gradient(160deg,#3d5cff,#1b32c4)}
+.kapanis h2 span{color:#ffd66b}
+.kapanis .aciklama{color:#dde3ff;margin-left:auto;margin-right:auto}
+.kapanis .magazalar{justify-content:center}
+footer{padding:44px 0 60px;font-size:.92rem;color:var(--soluk)}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-bottom:18px}
+footer p{margin:8px 0}
+:focus-visible{outline:3px solid var(--sari);outline-offset:3px;border-radius:6px}
+@media (min-width:760px){
+.ust nav{display:flex}
+.adimlar,.kartlar.uc{grid-template-columns:repeat(3,1fr)}
+.kartlar{grid-template-columns:repeat(2,1fr)}
+.planlar{grid-template-columns:repeat(2,1fr)}
+.ikili{grid-template-columns:1fr 1fr;gap:56px}
+.ikili.ters .cihaz{order:2}
+}
+@media (min-width:940px){
+.bolum{padding:96px 0}
+.kahraman{grid-template-columns:1.15fr .85fr;padding-top:56px}
+.kahraman .cihaz{width:330px;margin-bottom:-170px}
+.kartlar.dort{grid-template-columns:repeat(4,1fr)}
+}
 </style>
 </head>
 <body>
-<header class="ust"><div class="kap">
-<div class="marka">Soru Defterim</div>
-<h1>Gizlilik, KVKK ve İletişim</h1>
-</div></header>
-<main class="kap">
 
-<h2>Nedir?</h2>
-<p>Soru Defterim, sınava hazırlanan öğrenciler için bir dijital hata
-defteridir. Çözemediğin sorunun fotoğrafını çeker, çözümünü eklersin;
-uygulama aralıklı tekrar yöntemiyle o soruyu doğru zamanda yeniden önüne
-getirir.</p>
-<h2>İndir</h2>
-<p><a href="https://apps.apple.com/app/id6812670379" aria-label="App Store'dan indirin"><img src="rozet/app-store-tr.svg" alt="App Store'dan indirin" width="189" height="50" style="vertical-align:middle"></a></p>
-<p>Android sürümü Google Play'de kapalı test aşamasında; yayına çıkınca bağlantı burada olacak.</p>
-<h2>Yasal metinler</h2>
-<ul>
-<li><a href="gizlilik.html">Gizlilik Politikası</a></li>
-<li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
-<li><a href="hesap-silme.html">Hesap ve verileri silme</a></li>
-</ul>
-<h2>İletişim ve destek</h2>
-<p>Soru, geri bildirim ve içerik şikâyetleri için:
-<a href="mailto:sorudefter@gmail.com">sorudefter@gmail.com</a></p>
-
+<div class="hero">
+<div class="kap">
+<header class="ust">
+<a class="marka" href="./"><img src="gorsel/ikon-192.png" width="40" height="40" alt="">Soru Defterim</a>
+<nav aria-label="Sayfa içi">
+<a href="#nasil">Nasıl çalışır</a>
+<a href="#ozellikler">Özellikler</a>
+<a href="#ogretmenler">Öğretmenler</a>
+<a href="#sss">SSS</a>
+</nav>
+<a class="dugme" href="#indir">İndir</a>
+</header>
+<main class="kahraman">
+<div>
+<p class="ustyazi">DİJİTAL HATA DEFTERİ</p>
+<h1>Yanlışını unutma, <span>netini artır.</span></h1>
+<p class="aciklama">Çözemediğin sorunun fotoğrafını çek, çözümünü ekle. Soru Defterim o soruyu tam unutmak üzereyken yeniden önüne getirir.</p>
+<ul class="sinavlar" aria-label="Sınavlar"><li>TYT</li><li>AYT</li><li>LGS</li><li>KPSS</li></ul>
+<div class="magazalar">
+<a href="https://apps.apple.com/tr/app/id6812670379"><img src="rozet/app-store-tr.svg" width="204" height="54" alt="App Store’dan indirin"></a>
+<span class="yakinda">Android sürümü çok yakında</span>
+</div>
+<p class="not">Ücretsiz başla · Reklam yok · 13 yaş ve üzeri</p>
+</div>
+<img class="cihaz" src="gorsel/cihaz-bugun.png" width="548" height="1049" alt="Soru Defterim Bugün ekranı: tekrar zamanı gelen sorular ve günlük seri">
 </main>
-<footer><div class="kap">
-<p><a href="index.html">Ana sayfa</a> · <a href="gizlilik.html">Gizlilik Politikası</a></p>
-<p class="kucuk">Soru Defterim</p>
-</div></footer>
+</div>
+</div>
+
+<section class="bolum" id="nasil">
+<div class="kap">
+<p class="ustyazi">NASIL ÇALIŞIR?</p>
+<h2>Üç adımda dijital hata defteri</h2>
+<ol class="adimlar">
+<li><h3>Fotoğrafını çek</h3><p>Çözemediğin soruyu kamerayla ya da galeriden ekle, dersini ve konusunu seç.</p></li>
+<li><h3>Çözümünü ekle</h3><p>Yaz, fotoğrafın üzerine çiz ya da çözümün fotoğrafını çek.</p></li>
+<li><h3>Doğru günde tekrar et</h3><p>Uygulama her soruyu 1, 3, 7, 16 ve 35. günlerde yeniden önüne getirir, zamanı gelince hatırlatır.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="bolum bant" id="ozellikler">
+<div class="kap">
+<div class="ikili">
+<img class="cihaz" src="gorsel/cihaz-soru-ekle.png" width="548" height="1049" alt="Soru ekleme ekranı: çekilen soru fotoğrafı, ders ve konu seçimi" loading="lazy">
+<div>
+<p class="ustyazi">SORU EKLE</p>
+<h2>Yanlış sorun saniyeler içinde defterde</h2>
+<p class="aciklama">Kes yapıştır yok. Fotoğrafını çek, kırp, dersini seç; soru defterine düşsün.</p>
+<ul>
+<li>Art arda çekerek birden çok soru ekle</li>
+<li>Derse, konuya ve duruma göre filtrele</li>
+<li>İnternet yokken de çek; bağlantı gelince yüklenir</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bolum">
+<div class="kap">
+<div class="ikili ters">
+<img class="cihaz" src="gorsel/cihaz-cizim.png" width="548" height="1049" alt="Çizim ekranı: soru fotoğrafının üzerine kalemle yazılmış çözüm" loading="lazy">
+<div>
+<p class="ustyazi">ÇİZEREK ÇÖZ</p>
+<h2>Çözümü kâğıttaki gibi üzerine yaz</h2>
+<p class="aciklama">Kalemle işaretle, adımları yaz. Çizimin soruyla birlikte saklanır; tekrar gününde önce kendin dene, sonra çözüme bak.</p>
+</div>
+</div>
+<div class="kartlar dort">
+<div><h3>Aralıklı tekrar</h3><p>Kolay sorular seyrekleşir, zorlandıkların daha sık gelir.</p></div>
+<div><h3>Analiz</h3><p>Hangi derste, hangi konuda, ne tür hata yaptığını gör.</p></div>
+<div><h3>PDF çıktısı</h3><p>Seçtiğin sorulardan çalışma kâğıdı ya da çözümlü döküm al.</p></div>
+<div><h3>Günlük hatırlatma</h3><p>Tekrar zamanı gelen soruları bildirimle haber verir.</p></div>
+</div>
+</div>
+</section>
+
+<section class="bolum mavibant" id="ogretmenler">
+<div class="kap">
+<div class="ikili">
+<img class="cihaz" src="gorsel/cihaz-sinif.png" width="548" height="1049" alt="Sınıf ekranı: öğrencilerin paylaştığı sorular ve eklenen çözümler" loading="lazy">
+<div>
+<p class="ustyazi">ÖĞRETMENLER VE SINIFLAR</p>
+<h2>Sınıfının takıldığı soruları tek yerde gör</h2>
+<p class="aciklama">Sınıfını aç, kodu paylaş. Öğrenci takıldığı soruyu gönderir; çözümü sen ya da arkadaşları ekler.</p>
+<ul>
+<li>Bir sınıfta 40 öğrenciye kadar</li>
+<li>Sohbet yok; yalnız soru ve çözüm</li>
+<li>İstersen çözümleri yalnızca sen eklersin</li>
+<li>Uygunsuz içerik bildirilebilir, kullanıcı engellenebilir</li>
+</ul>
+<div class="baglantilar">
+<a class="dugme" href="mailto:sorudefter@gmail.com?subject=%C3%96%C4%9Fretmen%20deste%C4%9Fi">Öğretmen desteği için yazın</a>
+<a class="cizgili" href="indir/ogretmen-tanitim.png">Öğretmen tanıtımı</a>
+<a class="cizgili" href="indir/sinif-afisi.png">Sınıf afişi</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bolum" id="ucret">
+<div class="kap">
+<p class="ustyazi">ÜCRETSİZ VE PREMIUM</p>
+<h2>Ücretsiz başla, istersen sınırları kaldır</h2>
+<div class="planlar">
+<div class="plan"><h3>Ücretsiz</h3><ul>
+<li>Defterinde 40 soruya kadar</li>
+<li>Aralıklı tekrar ve analiz</li>
+<li>1 sınıf ya da grup kurma; sınıflara katılmak ücretsiz</li>
+<li>3 PDF çıktısı</li>
+</ul></div>
+<div class="plan one"><h3>Premium</h3><ul>
+<li>Sınırsız soru</li>
+<li>Sınırsız sınıf ve grup</li>
+<li>Sınırsız PDF</li>
+<li>Aylık ya da yıllık abonelik; güncel fiyat mağaza sayfasında</li>
+</ul></div>
+</div>
+</div>
+</section>
+
+<section class="bolum bant" id="sss">
+<div class="kap">
+<p class="ustyazi">SIK SORULANLAR</p>
+<h2>Merak edilenler</h2>
+<div class="sss">
+<details><summary>Soru Defterim ücretsiz mi?</summary><p>Evet. 40 soruya kadar defter, tekrar ve sınıf özellikleri ücretsiz. Sınırları kaldırmak istersen Premium’a geçebilirsin. Uygulamada reklam yok.</p></details>
+<details><summary>Hangi sınavlar için uygun?</summary><p>TYT, AYT, LGS ve KPSS başta olmak üzere soru çözerek hazırlanılan her sınav için.</p></details>
+<details><summary>Android’de var mı?</summary><p>Android sürümü Google Play’de test aşamasında ve çok yakında yayında olacak. Şu an iPhone ve iPad için App Store’dan indirebilirsin.</p></details>
+<details><summary>İnternet olmadan çalışır mı?</summary><p>Soru çekmeye devam edebilirsin; fotoğraflar cihazında bekler ve bağlantı gelince yüklenir. Tekrar seansı ve sınıf için internet gerekir.</p></details>
+<details><summary>Verilerim güvende mi?</summary><p>Verilerin pazarlama amacıyla üçüncü taraflarla paylaşılmaz. Ayrıntılar <a href="gizlilik.html">Gizlilik Politikası</a> ve <a href="kvkk.html">KVKK Aydınlatma Metni</a>’nde.</p></details>
+<details><summary>Kaç yaşından itibaren kullanılabilir?</summary><p>13 yaş ve üzeri.</p></details>
+<details><summary>Hesabımı ve verilerimi nasıl silerim?</summary><p>Uygulamada Profil, Ayarlar, Hesap bölümünden. Adımlar <a href="hesap-silme.html">Hesap ve verileri silme</a> sayfasında.</p></details>
+<details><summary>Destek için nereye yazarım?</summary><p>Soru, geri bildirim ve içerik şikâyetleri için <a href="mailto:sorudefter@gmail.com">sorudefter@gmail.com</a>.</p></details>
+</div>
+</div>
+</section>
+
+<section class="bolum kapanis" id="indir">
+<div class="kap">
+<h2>Yanlışını unutma, <span>netini artır.</span></h2>
+<p class="aciklama">Bugün ilk üç yanlışını kaydet; gerisini Soru Defterim takip etsin.</p>
+<div class="magazalar">
+<a href="https://apps.apple.com/tr/app/id6812670379"><img src="rozet/app-store-tr.svg" width="204" height="54" alt="App Store’dan indirin"></a>
+<span class="yakinda">Android sürümü çok yakında</span>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="kap">
+<nav aria-label="Yasal">
+<a href="gizlilik.html">Gizlilik Politikası</a>
+<a href="kvkk.html">KVKK Aydınlatma Metni</a>
+<a href="hesap-silme.html">Hesap ve verileri silme</a>
+<a href="mailto:sorudefter@gmail.com">sorudefter@gmail.com</a>
+</nav>
+<p>© 2026 Soru Defterim</p>
+<p>Apple ve App Store, Apple Inc.’in ticari markalarıdır.</p>
+</div>
+</footer>
+
 </body>
 </html>
